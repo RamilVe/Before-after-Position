@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5rem;
+}
+
+header .logo img{
+    height: 100px;
+}
+
+header .ht-right{
+    display: flex;
+}
+
+header .ht-right a{
+    margin-left: 40px;
+    color: #181818;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+header .ht-right .icons{
+    margin-left: 40px;
+}
+
+header .ht-right .icons i{
+    margin-left: 15px;
+}
+
+header .ht-right .icons i:hover{
+    color: #1976BC;
+    cursor: pointer;
+}
+
+header .ht-right a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -17px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    transition: .5s;
+}
+
+header .ht-right a:hover::before{
+    width: 100%;
+}
+
+header .ht-right a::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 15px rgb(24 24 24 / 15%);
+    z-index: -1;
+    transition: 300ms;
+}
+
+header .ht-right a:hover::after{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+#Slider{
+    background-image: url(https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-home-slider-04.jpg);
+    background-size: cover;
+    padding: 20rem 0;
+    text-align: center;
+    color: black;
+}
+
+#Slider .US{
+    font-size: 15px;
+}
+
+#Slider hr{
+    width: 5%;
+    margin: 15px auto;
+    border: 1px solid #fff;
+}
+
+#Slider span{
+    font-size: 48px;
+    color: #fff;
+}
+
+#Slider b{
+    position: relative;
+    z-index: 1;
+}
+
+#Slider b::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    opacity: .1;
+    background-color: #fff;
+    z-index: -1;
+}
+
+#Slider p{
+    font-size: 20px;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+
+#Slider a{
+    padding: 15px 15px;
+    margin: 0 2px;
+    color: #fff;
+}
+
+#Slider .left{
+    background-color: #8dc645;
+}
+
+#Slider .right{
+    background-color: #1976bc;
+}
+
+#Slider .left:hover{
+    background: linear-gradient(to top,#1976bc 0%,#8dc645 100%);
+}
+
+#Slider .right:hover{
+    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+}
+
+#Travel{
+    padding: 5rem 10px;
+}
+
+#Travel .box-all-title{
+    text-align: center;
+}
+
+#Travel .box-all-title h1{
+    font-size: 56px;
+    padding: 10px 0;
+}
+
+#Travel .box-all-title b{
+    position: relative;
+    z-index: 1;
+}
+
+#Travel b::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    z-index: -1;
+}
+
+#Travel p{
+    padding: 10px;
+    color: #181818;
+}
+
+.box-all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.box-all .box{
+    width: 20%;
+    height: 400px;
+    padding: 0 0.625em 1.25em;
+    margin-top: 10px;
+    position: relative;
+}
+
+.box-all .box img{
+    width: 100%;
+}
+
+.box-all .box-text{
+    background-color: #fff;
+}
+
+.box-all .box-text h1{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.box-all .box-text hr{
+    width: 90%;
+    margin: 10px auto 15px;
+    background: #e7e7e7;
+    opacity: 0.5;
+}
+
+.box-all .box-text i{
+    padding: 0 10px;
+    color: #1976bc;
+    font-size: .875em;
+}
+
+.box-all .box-text span{
+    padding: 10px 0;
+    font-size: .875em;
+}
+
+.box-all .box-text h1:hover{
+    color: #1976bc;
+    cursor: pointer;
+}
+
+.box-all .box-text p a{
+    color: #181818;
+}
+
+.box-all .box-text p a:hover{
+    color: #1976bc;
+}
+
+.box-image{
+    position: relative;
+}
+
+.box-image::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 4px;
+    left: 0;
+    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    transition: .3s;
+}
+
+.box-image:hover::after{
+    width: 100%;
+}
+
+.box-image img:hover{
+    filter: brightness(50%);
+}
+
+.box-all .box::after{
+    content: 'Special Offer';
+    position: absolute;
+    height: 10px;
+    width: 50%;
+    top: 0px;
+    left: 0;
+    background: #8dc645;
+    transform: translate(10px,10px);
+}
