@@ -195,10 +195,12 @@ header .ht-right a:hover::after{
     padding: 0 0.625em 1.25em;
     margin-top: 10px;
     position: relative;
+    z-index: 2;
 }
 
 .box-all .box img{
     width: 100%;
+    z-index: -1;
 }
 
 .box-all .box-text{
@@ -267,10 +269,23 @@ header .ht-right a:hover::after{
 .box-all .box::after{
     content: 'Special Offer';
     position: absolute;
-    height: 10px;
+    height: 30px;
     width: 50%;
     top: 0px;
     left: 0;
     background: #8dc645;
+    color: #fff;
     transform: translate(10px,10px);
+}
+
+.box-all .box::before{
+    content: 'Special Offer';
+    position: absolute;
+    height: 30px;
+    width: 50%;
+    top: 50px;
+    left: 0;
+    background: #1976bc;
+    color: #fff;
+    z-index: 1;
 }
