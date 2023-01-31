@@ -196,9 +196,15 @@ header .ht-right a:hover::after{
     margin-top: 10px;
     position: relative;
     z-index: 2;
+    transition: .5s;
 }
 
-.box-all .box img{
+.box-all .box:hover{
+    transform: translateY(-20px);
+    box-shadow: 2px 5px 14px 2px;
+}
+
+.box-all .box-image img{
     width: 100%;
     z-index: -1;
 }
@@ -266,26 +272,75 @@ header .ht-right a:hover::after{
     filter: brightness(50%);
 }
 
-.box-all .box::after{
-    content: 'Special Offer';
+.box-all .special-offer::after{
+    content: 'SPECIAL OFFER';
     position: absolute;
     height: 30px;
     width: 50%;
-    top: 0px;
+    top: 0;
     left: 0;
     background: #8dc645;
     color: #fff;
     transform: translate(10px,10px);
 }
 
-.box-all .box::before{
-    content: 'Special Offer';
+.box-all .special-offer .box-image span{
     position: absolute;
     height: 30px;
-    width: 50%;
-    top: 50px;
+    top: 40px;
     left: 0;
     background: #1976bc;
     color: #fff;
-    z-index: 1;
+}
+
+.box-all .twentyperc::after{
+    content: 'NOW 20% OFF';
+    position: absolute;
+    height: 30px;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: #8dc645;
+    color: #fff;
+    transform: translate(10px,10px);
+}
+
+.box-all .twentyperc .box-image span{
+    position: absolute;
+    height: 30px;
+    top: 40px;
+    left: 0;
+    background: #1976bc;
+    color: #fff;
+}
+
+.box-all .thirtyperc::after{
+    content: '30% DISCOUNT';
+    position: absolute;
+    height: 30px;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: #8dc645;
+    color: #fff;
+    transform: translate(10px,10px);
+}
+
+.box-all .thirtyperc .box-image span{
+    position: absolute;
+    height: 30px;
+    top: 40px;
+    left: 0;
+    background: #1976bc;
+    color: #fff;
+}
+
+.box-all .box .box-image span{
+    position: absolute;
+    height: 30px;
+    width: 37%;
+    top: 40px;
+    left: 0;
+    background: #1976bc;
+    color: #fff;
 }
